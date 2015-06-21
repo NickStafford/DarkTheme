@@ -1,7 +1,12 @@
 html{
 	text-align: center;
+	font-size: 1.5em;
 }
 
 .btn-label{
 	display: inline;
 }		
+
+.jumbotron p{
+	font-size: 14px;
+}
