@@ -2,11 +2,85 @@
 	<head>
 		<title> DarkTheme </title>
 		
-		<!-- Import JQuery -->
-		<script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js'> </script>
+		<!--Retrieve style sheet(s)-->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href='darkthemepage.css' rel='stylesheet'>
 	</head>
 	
 	<body>
-		<h1> DarkTheme Implementation </h1>
+		<div id='pageArea'>
+			<div id='header' class='page-header'>
+				<h1> DarkTheme Implementation <small>A simple tool for annoyingly bright sites.</small></h1>
+			</div>
+			
+			<div id='versionContainer' class='container-fluid row'>
+			
+				<div id='basicContainer' class='col-md-6'>
+					<div id='basicPanel' class='panel panel-default'>
+						<div class='panel-heading'>
+							<h3 class='panel-title'> Basic </h3>
+						</div>
+						
+						<div class='panel-body'>
+							<p> Here's the encoded version of the Basic bookmarklet:</p>
+							
+							<br>
+							
+							<input id='basicTextBox' type='text' class='form-control' value='This is a test' readonly>
+							</input>
+							
+							<br>
+							
+							<a class='btn btn-default' href='http://www.test.co.uk'> DarkTheme (Basic) </a>
+						</div>
+					</div>
+				</div>
+				
+				<div id='hardcoreContainer' class='col-md-6'>
+					<div id='hardcorePanel' class='panel panel-default'>
+						<div class='panel-heading'>
+							<h3 class='panel-title'> Hardcore </h3>
+						</div>
+						
+						<div class='panel-body'>
+							<p> Here's the encoded version of the Hardcore bookmarklet:</p>
+							
+							<br>
+							
+							<input id='hardcoreTextBox' type='text' class='form-control' value='This is also a test' readonly>
+							</input>
+							
+							<br>
+							
+							<a class='btn btn-default' href='http://www.test.co.uk'> DarkTheme (Hardcore) </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class='row'>
+				<div class=' col-md-10 col-md-offset-1 well well-sm'>
+					<p class='btn-label'> If you want to test the Hardcore version be sure to click here first and add some images to the page to be removed: </p>
+					<button class='btn btn-default'> Imagify </button>
+				</div>
+			</div>
+		
+			<div class='jumbotron'>
+					<p>DarkTheme is a simple tool to instantly apply a black and grey based theme to any website.
+					Intended to be used as a bookmarklet, use the examples below to give it a try.</p>
+					
+					<p>The Basic version of the bookmarklet will change only set colours on the page. Not any background images which may exist. However, the more comprehensive Hardcore version will strip out any background images too.
+						Feel free to copy the encoded Javascript for either version and use it to create your own. However the easiest way to use this is to drag the buttons below each version straight into your browsers favorites bar.
+			</div>
+		
+		</div>
+		
+		<!--Import Intensive Scripts Last-->
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<!-- Import DarkTheme Page Scripts-->
+			<script type='text/javascript' src='darkthemepage.js'> </script>
 	</body>
 <html>
