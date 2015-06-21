@@ -5,7 +5,7 @@ var imagify = function(){
 	
 	//Set the body image properties
 	body.css('background-image', 'url("images/blue.jpg")');
-	body.css('background-size', 'contain');
+	body.css('background-size', 'cover');
 	
 	header.css('background-color', '#FFFFFF');
 	$('.panel').css('background-image', 'url("images/orange.jpg")');
