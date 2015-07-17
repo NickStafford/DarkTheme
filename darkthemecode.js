@@ -50,6 +50,4 @@ var greyscaleElement = function(element)
 			//push the greyscale color back to the element
 			$(this).css('background-color', color.toString());
 		}
-}
-
 };
